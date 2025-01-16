@@ -17,3 +17,4 @@ WEAPON IDEAS:
   - Can erase pen lines
  
 LOCATION IDEAS:
+- Notebook
