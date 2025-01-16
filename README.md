@@ -18,3 +18,11 @@ WEAPON IDEAS:
  
 LOCATION IDEAS:
 - Notebook
+  - Acts as each "split" of each run. "turning a page" is changing the level, and each notebook ends with a different boss. Ideally, each notebook is a subject with new items and/or enemies in each. We'll see.
+- Resting Spots (Probably called like, break rooms or smth? Idk yet)
+  - Every 5-10 pages (Probably)
+  - Can re-sharpen pencils, buy new ink cartridges and other supplies
+    - Let the player heal? What would their HP even be? A number might be kinda boring, maybe some equivalent of hollow knight masks or smth.
+- Offices
+  - Properly designed rooms / chambers where boss fights happen
+  - Fight different office items like big thumbtack or smth
