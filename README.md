@@ -26,3 +26,10 @@ LOCATION IDEAS:
 - Offices
   - Properly designed rooms / chambers where boss fights happen
   - Fight different office items like big thumbtack or smth
+ 
+ENEMY IDEAS:
+- Staple
+  - Spawns from a stapler, destroy the stapler to stop the staple spawning
+- Thumbtacks
+  - Roll back and forth
+- 
