@@ -32,4 +32,7 @@ ENEMY IDEAS:
   - Spawns from a stapler, destroy the stapler to stop the staple spawning
 - Thumbtacks
   - Roll back and forth
-- 
+ 
+OTHER IDEAS:
+
+- Flying Spin Attack??? (Flying pencil fix build)
