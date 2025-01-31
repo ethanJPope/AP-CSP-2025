@@ -1,28 +1,94 @@
-[gd_scene load_steps=4 format=3 uid="uid://cgajl6mhun436"]
+[gd_scene load_steps=8 format=3 uid="uid://cgajl6mhun436"]
 
 [ext_resource type="PackedScene" uid="uid://dugus4k3u63h3" path="res://Scenes/Player.tscn" id="1_rab66"]
-[ext_resource type="PackedScene" uid="uid://bctp548t8tkgk" path="res://Pencil.tscn" id="2_qarc1"]
+[ext_resource type="PackedScene" uid="uid://bctp548t8tkgk" path="res://Scenes/Pencil.tscn" id="2_qarc1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0i4ec"]
 size = Vector2(1197, 20)
+
+[sub_resource type="Animation" id="Animation_j0p05"]
+resource_name = "Camera Offset Left"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(30, 0), Vector2(0, 0), Vector2(-30, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_gjpho"]
+resource_name = "Camera Offset Right"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-30, 0), Vector2(0, 0), Vector2(30, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_5nsto"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(30, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5nsto"]
+_data = {
+&"Camera Offset Left": SubResource("Animation_j0p05"),
+&"Camera Offset Right": SubResource("Animation_gjpho"),
+&"RESET": SubResource("Animation_5nsto")
+}
 
 [node name="Node2D" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(293.5, 0)
+position = Vector2(293, 0)
 shape = SubResource("RectangleShape2D_0i4ec")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_rab66")]
-position = Vector2(-284, -23)
+position = Vector2(-260, -20)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(1, 2)
-zoom = Vector2(2, 2)
+position = Vector2(200, 0)
+offset = Vector2(30, 0)
+zoom = Vector2(2.5, 2.5)
+position_smoothing_enabled = true
+position_smoothing_speed = 12.0
 metadata/_edit_lock_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D/Camera2D"]
+libraries = {
+&"": SubResource("AnimationLibrary_5nsto")
+}
+
+[node name="Timer" type="Timer" parent="CharacterBody2D/Camera2D"]
+wait_time = 0.6
 
 [node name="AnimatableBody2D" parent="CharacterBody2D" instance=ExtResource("2_qarc1")]
 collision_layer = 2
 collision_mask = 2
-metadata/_edit_lock_ = true
+
+[connection signal="timeout" from="CharacterBody2D/Camera2D/Timer" to="CharacterBody2D" method="LookaheadTimer"]
