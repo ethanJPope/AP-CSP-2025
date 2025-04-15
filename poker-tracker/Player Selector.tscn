@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://b3ka0pslslh5g"]
+
+[ext_resource type="Texture2D" uid="uid://dcvxupkscufqf" path="res://Table.png" id="1_6olgl"]
+[ext_resource type="Script" uid="uid://hjatupc5d5wq" path="res://player_selector.gd" id="1_e61d6"]
+[ext_resource type="Texture2D" uid="uid://gnke0eywycgf" path="res://Add Chips.png" id="2_hafr1"]
+[ext_resource type="Texture2D" uid="uid://dykv5ovbco52w" path="res://Subtract Chips.png" id="3_e61d6"]
+[ext_resource type="Texture2D" uid="uid://bo05h5wes0c7q" path="res://Play Chip.png" id="4_f8gbs"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_e61d6")
+
+[node name="Table" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_6olgl")
+metadata/_edit_lock_ = true
+
+[node name="Subtract Players" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 1000.0
+offset_top = 791.0
+offset_right = 1211.0
+offset_bottom = 1002.0
+texture_normal = ExtResource("3_e61d6")
+stretch_mode = 0
+
+[node name="Add Players" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 700.0
+offset_top = 791.0
+offset_right = 911.0
+offset_bottom = 1002.0
+texture_normal = ExtResource("2_hafr1")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+offset_left = 767.0
+offset_top = 442.0
+offset_right = 1141.0
+offset_bottom = 552.0
+theme_override_font_sizes/font_size = 80
+text = "Players: 7"
+
+[node name="Play" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 1617.0
+offset_top = 416.0
+offset_right = 1828.0
+offset_bottom = 627.0
+texture_normal = ExtResource("4_f8gbs")
+stretch_mode = 0
+
+[connection signal="pressed" from="Subtract Players" to="." method="_on_subtract_players_pressed"]
+[connection signal="pressed" from="Add Players" to="." method="_on_add_players_pressed"]
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]

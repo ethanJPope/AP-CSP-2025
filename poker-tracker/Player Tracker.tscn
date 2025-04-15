@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=3 uid="uid://dbbnd376to1om"]
+
+[ext_resource type="Texture2D" uid="uid://d3hx80k2g051y" path="res://Player Card.png" id="1_glnd0"]
+[ext_resource type="Texture2D" uid="uid://gnke0eywycgf" path="res://Add Chips.png" id="2_g08ms"]
+[ext_resource type="Texture2D" uid="uid://dykv5ovbco52w" path="res://Subtract Chips.png" id="3_3cd5d"]
+[ext_resource type="Script" uid="uid://by51pqibaf7v5" path="res://bulk_point_handler.gd" id="4_jalyo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_glnd0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jalyo"]
+
+[node name="Player Tracker" type="Node2D"]
+scale = Vector2(0.9, 0.9)
+
+[node name="PlayerCard" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(11, 11)
+texture = ExtResource("1_glnd0")
+metadata/_edit_lock_ = true
+
+[node name="Player Name" type="TextEdit" parent="."]
+offset_left = -69.0
+offset_top = -135.0
+offset_right = 71.0
+offset_bottom = -90.0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_glnd0")
+text = "Player"
+scroll_smooth = true
+metadata/_edit_lock_ = true
+
+[node name="Add Chips" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = -54.0
+offset_top = -32.0
+offset_right = -23.0
+offset_bottom = -1.0
+texture_normal = ExtResource("2_g08ms")
+stretch_mode = 0
+metadata/_edit_lock_ = true
+
+[node name="Subtract Chips" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 23.0
+offset_top = -32.0
+offset_right = 54.0
+offset_bottom = -1.0
+texture_normal = ExtResource("3_3cd5d")
+stretch_mode = 0
+metadata/_edit_lock_ = true
+
+[node name="Bulk Point Handler" type="TextEdit" parent="."]
+offset_left = -55.0
+offset_top = 132.0
+offset_right = 55.0
+offset_bottom = 165.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_jalyo")
+script = ExtResource("4_jalyo")
+metadata/_edit_lock_ = true

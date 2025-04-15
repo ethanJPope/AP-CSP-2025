@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7slft5u0d60g"]
+
+[ext_resource type="Script" uid="uid://cv21pguq0ykwo" path="res://title_screen.gd" id="1_1v7g7"]
+[ext_resource type="Texture2D" uid="uid://dcvxupkscufqf" path="res://Table.png" id="1_rpgwi"]
+[ext_resource type="Texture2D" uid="uid://bbdsxiwlw6caw" path="res://Title Screen.png" id="2_0ijhy"]
+[ext_resource type="Texture2D" uid="uid://bo05h5wes0c7q" path="res://Play Chip.png" id="3_6xtyh"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_1v7g7")
+
+[node name="Table" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_rpgwi")
+metadata/_edit_lock_ = true
+
+[node name="TitleScreen" type="Sprite2D" parent="."]
+position = Vector2(969, 415)
+scale = Vector2(1.97849, 1.97849)
+texture = ExtResource("2_0ijhy")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 808.0
+offset_top = 763.0
+offset_right = 1095.0
+offset_bottom = 1050.0
+texture_normal = ExtResource("3_6xtyh")
+stretch_mode = 0
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
