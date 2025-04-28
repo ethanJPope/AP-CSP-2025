@@ -11,7 +11,7 @@ func _on_add_players_pressed() -> void:
 		pass
 
 func _on_subtract_players_pressed() -> void:
-	if Global.Players > 1:
+	if Global.Players > 2:
 		Global.Players -= 1
 	else:
 		pass
