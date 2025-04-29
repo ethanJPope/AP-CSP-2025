@@ -132,7 +132,7 @@ scale = Vector2(11, 11)
 texture = ExtResource("3_3dxm6")
 metadata/_edit_lock_ = true
 
-[node name="Player Name" type="TextEdit" parent="P3"]
+[node name="Player 3 Name" type="TextEdit" parent="P3"]
 offset_left = -69.0
 offset_top = -135.0
 offset_right = 71.0
@@ -183,7 +183,7 @@ scale = Vector2(11, 11)
 texture = ExtResource("3_3dxm6")
 metadata/_edit_lock_ = true
 
-[node name="Player Name" type="TextEdit" parent="P4"]
+[node name="Player 4 Name" type="TextEdit" parent="P4"]
 offset_left = -69.0
 offset_top = -135.0
 offset_right = 71.0
@@ -234,7 +234,7 @@ scale = Vector2(11, 11)
 texture = ExtResource("3_3dxm6")
 metadata/_edit_lock_ = true
 
-[node name="Player Name" type="TextEdit" parent="P5"]
+[node name="Player 5 Name" type="TextEdit" parent="P5"]
 offset_left = -69.0
 offset_top = -135.0
 offset_right = 71.0
@@ -285,7 +285,7 @@ scale = Vector2(11, 11)
 texture = ExtResource("3_3dxm6")
 metadata/_edit_lock_ = true
 
-[node name="Player Name" type="TextEdit" parent="P6"]
+[node name="Player 6 Name" type="TextEdit" parent="P6"]
 offset_left = -69.0
 offset_top = -135.0
 offset_right = 71.0
@@ -336,7 +336,7 @@ scale = Vector2(11, 11)
 texture = ExtResource("3_3dxm6")
 metadata/_edit_lock_ = true
 
-[node name="Player Name" type="TextEdit" parent="P7"]
+[node name="Player 7 Name" type="TextEdit" parent="P7"]
 offset_left = -69.0
 offset_top = -135.0
 offset_right = 71.0
@@ -387,7 +387,7 @@ scale = Vector2(11, 11)
 texture = ExtResource("3_3dxm6")
 metadata/_edit_lock_ = true
 
-[node name="Player Name" type="TextEdit" parent="P8"]
+[node name="Player 8 Name" type="TextEdit" parent="P8"]
 offset_left = -69.0
 offset_top = -135.0
 offset_right = 71.0
@@ -435,3 +435,10 @@ offset_right = 1187.0
 offset_bottom = 549.0
 theme_override_font_sizes/font_size = 80
 text = "Pot: 0"
+
+[connection signal="text_changed" from="P3/Player 3 Name" to="." method="_on_player_3_name_text_changed"]
+[connection signal="text_changed" from="P4/Player 4 Name" to="." method="_on_player_4_name_text_changed"]
+[connection signal="text_changed" from="P5/Player 5 Name" to="." method="_on_player_5_name_text_changed"]
+[connection signal="text_changed" from="P6/Player 6 Name" to="." method="_on_player_6_name_text_changed"]
+[connection signal="text_changed" from="P7/Player 7 Name" to="." method="_on_player_7_name_text_changed"]
+[connection signal="text_changed" from="P8/Player 8 Name" to="." method="_on_player_8_name_text_changed"]
