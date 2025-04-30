@@ -1,11 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://dtx7rk31ila5a"]
+[gd_scene load_steps=8 format=3 uid="uid://dtx7rk31ila5a"]
 
 [ext_resource type="Texture2D" uid="uid://dcvxupkscufqf" path="res://Table.png" id="1_glv2v"]
 [ext_resource type="Script" uid="uid://drnsyofxmc56q" path="res://main.gd" id="1_r0du0"]
 [ext_resource type="Texture2D" uid="uid://d3hx80k2g051y" path="res://Player Card.png" id="3_3dxm6"]
 [ext_resource type="Texture2D" uid="uid://gnke0eywycgf" path="res://Add Chips.png" id="4_lgr22"]
 [ext_resource type="Texture2D" uid="uid://dykv5ovbco52w" path="res://Subtract Chips.png" id="5_trn2v"]
-[ext_resource type="Script" uid="uid://by51pqibaf7v5" path="res://bulk_point_handler.gd" id="6_03owx"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_glnd0"]
 
@@ -68,8 +67,18 @@ offset_top = 132.0
 offset_right = 55.0
 offset_bottom = 165.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_jalyo")
-script = ExtResource("6_03owx")
+text = "10"
 metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="P1"]
+offset_left = -55.0
+offset_top = 44.0
+offset_right = 55.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 30
+text = "100000"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="P2" type="Node2D" parent="."]
 position = Vector2(952, 892)
@@ -92,7 +101,7 @@ text = "Player"
 scroll_smooth = true
 metadata/_edit_lock_ = true
 
-[node name="Add Chips" type="TextureButton" parent="P2"]
+[node name="Add Chips 2" type="TextureButton" parent="P2"]
 texture_filter = 1
 offset_left = -54.0
 offset_top = -32.0
@@ -102,7 +111,7 @@ texture_normal = ExtResource("4_lgr22")
 stretch_mode = 0
 metadata/_edit_lock_ = true
 
-[node name="Subtract Chips" type="TextureButton" parent="P2"]
+[node name="Subtract Chips 2" type="TextureButton" parent="P2"]
 texture_filter = 1
 offset_left = 23.0
 offset_top = -32.0
@@ -112,14 +121,24 @@ texture_normal = ExtResource("5_trn2v")
 stretch_mode = 0
 metadata/_edit_lock_ = true
 
-[node name="Bulk Point Handler" type="TextEdit" parent="P2"]
+[node name="Bulk Point Handler 2" type="TextEdit" parent="P2"]
 offset_left = -55.0
 offset_top = 132.0
 offset_right = 55.0
 offset_bottom = 165.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_jalyo")
-script = ExtResource("6_03owx")
+text = "10"
 metadata/_edit_lock_ = true
+
+[node name="Label 2" type="Label" parent="P2"]
+offset_left = -55.0
+offset_top = 44.0
+offset_right = 55.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 30
+text = "100000"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="P3" type="Node2D" parent="."]
 position = Vector2(1423, 810)
@@ -143,7 +162,7 @@ text = "Player"
 scroll_smooth = true
 metadata/_edit_lock_ = true
 
-[node name="Add Chips" type="TextureButton" parent="P3"]
+[node name="Add Chips 3" type="TextureButton" parent="P3"]
 texture_filter = 1
 offset_left = -54.0
 offset_top = -32.0
@@ -153,7 +172,7 @@ texture_normal = ExtResource("4_lgr22")
 stretch_mode = 0
 metadata/_edit_lock_ = true
 
-[node name="Subtract Chips" type="TextureButton" parent="P3"]
+[node name="Subtract Chips 3" type="TextureButton" parent="P3"]
 texture_filter = 1
 offset_left = 23.0
 offset_top = -32.0
@@ -163,14 +182,24 @@ texture_normal = ExtResource("5_trn2v")
 stretch_mode = 0
 metadata/_edit_lock_ = true
 
-[node name="Bulk Point Handler" type="TextEdit" parent="P3"]
+[node name="Bulk Point Handler 3" type="TextEdit" parent="P3"]
 offset_left = -55.0
 offset_top = 132.0
 offset_right = 55.0
 offset_bottom = 165.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_jalyo")
-script = ExtResource("6_03owx")
+text = "10"
 metadata/_edit_lock_ = true
+
+[node name="Label 3" type="Label" parent="P3"]
+offset_left = -55.0
+offset_top = 44.0
+offset_right = 55.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 30
+text = "100000"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="P4" type="Node2D" parent="."]
 position = Vector2(1603, 512)
@@ -194,7 +223,7 @@ text = "Player"
 scroll_smooth = true
 metadata/_edit_lock_ = true
 
-[node name="Add Chips" type="TextureButton" parent="P4"]
+[node name="Add Chips 4" type="TextureButton" parent="P4"]
 texture_filter = 1
 offset_left = -54.0
 offset_top = -32.0
@@ -204,7 +233,7 @@ texture_normal = ExtResource("4_lgr22")
 stretch_mode = 0
 metadata/_edit_lock_ = true
 
-[node name="Subtract Chips" type="TextureButton" parent="P4"]
+[node name="Subtract Chips 4" type="TextureButton" parent="P4"]
 texture_filter = 1
 offset_left = 23.0
 offset_top = -32.0
@@ -214,14 +243,24 @@ texture_normal = ExtResource("5_trn2v")
 stretch_mode = 0
 metadata/_edit_lock_ = true
 
-[node name="Bulk Point Handler" type="TextEdit" parent="P4"]
+[node name="Bulk Point Handler 4" type="TextEdit" parent="P4"]
 offset_left = -55.0
 offset_top = 132.0
 offset_right = 55.0
 offset_bottom = 165.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_jalyo")
-script = ExtResource("6_03owx")
+text = "10"
 metadata/_edit_lock_ = true
+
+[node name="Label 4" type="Label" parent="P4"]
+offset_left = -55.0
+offset_top = 44.0
+offset_right = 55.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 30
+text = "100000"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="P5" type="Node2D" parent="."]
 position = Vector2(503, 235)
@@ -245,7 +284,7 @@ text = "Player"
 scroll_smooth = true
 metadata/_edit_lock_ = true
 
-[node name="Add Chips" type="TextureButton" parent="P5"]
+[node name="Add Chips 5" type="TextureButton" parent="P5"]
 texture_filter = 1
 offset_left = -54.0
 offset_top = -32.0
@@ -255,7 +294,7 @@ texture_normal = ExtResource("4_lgr22")
 stretch_mode = 0
 metadata/_edit_lock_ = true
 
-[node name="Subtract Chips" type="TextureButton" parent="P5"]
+[node name="Subtract Chips 5" type="TextureButton" parent="P5"]
 texture_filter = 1
 offset_left = 23.0
 offset_top = -32.0
@@ -265,14 +304,24 @@ texture_normal = ExtResource("5_trn2v")
 stretch_mode = 0
 metadata/_edit_lock_ = true
 
-[node name="Bulk Point Handler" type="TextEdit" parent="P5"]
+[node name="Bulk Point Handler 5" type="TextEdit" parent="P5"]
 offset_left = -55.0
 offset_top = 132.0
 offset_right = 55.0
 offset_bottom = 165.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_jalyo")
-script = ExtResource("6_03owx")
+text = "10"
 metadata/_edit_lock_ = true
+
+[node name="Label 5" type="Label" parent="P5"]
+offset_left = -55.0
+offset_top = 44.0
+offset_right = 55.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 30
+text = "100000"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="P6" type="Node2D" parent="."]
 position = Vector2(1368, 227)
@@ -296,7 +345,7 @@ text = "Player"
 scroll_smooth = true
 metadata/_edit_lock_ = true
 
-[node name="Add Chips" type="TextureButton" parent="P6"]
+[node name="Add Chips 6" type="TextureButton" parent="P6"]
 texture_filter = 1
 offset_left = -54.0
 offset_top = -32.0
@@ -306,7 +355,7 @@ texture_normal = ExtResource("4_lgr22")
 stretch_mode = 0
 metadata/_edit_lock_ = true
 
-[node name="Subtract Chips" type="TextureButton" parent="P6"]
+[node name="Subtract Chips 6" type="TextureButton" parent="P6"]
 texture_filter = 1
 offset_left = 23.0
 offset_top = -32.0
@@ -316,14 +365,24 @@ texture_normal = ExtResource("5_trn2v")
 stretch_mode = 0
 metadata/_edit_lock_ = true
 
-[node name="Bulk Point Handler" type="TextEdit" parent="P6"]
+[node name="Bulk Point Handler 6" type="TextEdit" parent="P6"]
 offset_left = -55.0
 offset_top = 132.0
 offset_right = 55.0
 offset_bottom = 165.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_jalyo")
-script = ExtResource("6_03owx")
+text = "10"
 metadata/_edit_lock_ = true
+
+[node name="Label 6" type="Label" parent="P6"]
+offset_left = -55.0
+offset_top = 44.0
+offset_right = 55.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 30
+text = "100000"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="P7" type="Node2D" parent="."]
 position = Vector2(958, 154)
@@ -347,7 +406,7 @@ text = "Player"
 scroll_smooth = true
 metadata/_edit_lock_ = true
 
-[node name="Add Chips" type="TextureButton" parent="P7"]
+[node name="Add Chips 7" type="TextureButton" parent="P7"]
 texture_filter = 1
 offset_left = -54.0
 offset_top = -32.0
@@ -357,7 +416,7 @@ texture_normal = ExtResource("4_lgr22")
 stretch_mode = 0
 metadata/_edit_lock_ = true
 
-[node name="Subtract Chips" type="TextureButton" parent="P7"]
+[node name="Subtract Chips 7" type="TextureButton" parent="P7"]
 texture_filter = 1
 offset_left = 23.0
 offset_top = -32.0
@@ -367,14 +426,24 @@ texture_normal = ExtResource("5_trn2v")
 stretch_mode = 0
 metadata/_edit_lock_ = true
 
-[node name="Bulk Point Handler" type="TextEdit" parent="P7"]
+[node name="Bulk Point Handler 7" type="TextEdit" parent="P7"]
 offset_left = -55.0
 offset_top = 132.0
 offset_right = 55.0
 offset_bottom = 165.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_jalyo")
-script = ExtResource("6_03owx")
+text = "10"
 metadata/_edit_lock_ = true
+
+[node name="Label 7" type="Label" parent="P7"]
+offset_left = -55.0
+offset_top = 44.0
+offset_right = 55.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 30
+text = "100000"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="P8" type="Node2D" parent="."]
 position = Vector2(303, 512)
@@ -398,7 +467,7 @@ text = "Player"
 scroll_smooth = true
 metadata/_edit_lock_ = true
 
-[node name="Add Chips" type="TextureButton" parent="P8"]
+[node name="Add Chips 8" type="TextureButton" parent="P8"]
 texture_filter = 1
 offset_left = -54.0
 offset_top = -32.0
@@ -408,7 +477,7 @@ texture_normal = ExtResource("4_lgr22")
 stretch_mode = 0
 metadata/_edit_lock_ = true
 
-[node name="Subtract Chips" type="TextureButton" parent="P8"]
+[node name="Subtract Chips 8" type="TextureButton" parent="P8"]
 texture_filter = 1
 offset_left = 23.0
 offset_top = -32.0
@@ -418,27 +487,55 @@ texture_normal = ExtResource("5_trn2v")
 stretch_mode = 0
 metadata/_edit_lock_ = true
 
-[node name="Bulk Point Handler" type="TextEdit" parent="P8"]
+[node name="Bulk Point Handler 8" type="TextEdit" parent="P8"]
 offset_left = -55.0
 offset_top = 132.0
 offset_right = 55.0
 offset_bottom = 165.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_jalyo")
-script = ExtResource("6_03owx")
+text = "10"
 metadata/_edit_lock_ = true
+
+[node name="Label 8" type="Label" parent="P8"]
+offset_left = -55.0
+offset_top = 44.0
+offset_right = 55.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 30
+text = "100000"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Pot" type="Label" parent="."]
 texture_filter = 1
-offset_left = 813.0
+offset_left = 771.0
 offset_top = 439.0
-offset_right = 1187.0
+offset_right = 1145.0
 offset_bottom = 549.0
 theme_override_font_sizes/font_size = 80
-text = "Pot: 0"
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
 
+[connection signal="pressed" from="P1/Add Chips" to="." method="_on_add_chips_pressed"]
+[connection signal="pressed" from="P1/Subtract Chips" to="." method="_on_subtract_chips_pressed"]
+[connection signal="pressed" from="P2/Add Chips 2" to="." method="_on_add_chips_2_pressed"]
+[connection signal="pressed" from="P2/Subtract Chips 2" to="." method="_on_subtract_chips_2_pressed"]
 [connection signal="text_changed" from="P3/Player 3 Name" to="." method="_on_player_3_name_text_changed"]
+[connection signal="pressed" from="P3/Add Chips 3" to="." method="_on_add_chips_3_pressed"]
+[connection signal="pressed" from="P3/Subtract Chips 3" to="." method="_on_subtract_chips_3_pressed"]
 [connection signal="text_changed" from="P4/Player 4 Name" to="." method="_on_player_4_name_text_changed"]
+[connection signal="pressed" from="P4/Add Chips 4" to="." method="_on_add_chips_4_pressed"]
+[connection signal="pressed" from="P4/Subtract Chips 4" to="." method="_on_subtract_chips_4_pressed"]
 [connection signal="text_changed" from="P5/Player 5 Name" to="." method="_on_player_5_name_text_changed"]
+[connection signal="pressed" from="P5/Add Chips 5" to="." method="_on_add_chips_5_pressed"]
+[connection signal="pressed" from="P5/Subtract Chips 5" to="." method="_on_subtract_chips_5_pressed"]
 [connection signal="text_changed" from="P6/Player 6 Name" to="." method="_on_player_6_name_text_changed"]
+[connection signal="pressed" from="P6/Add Chips 6" to="." method="_on_add_chips_6_pressed"]
+[connection signal="pressed" from="P6/Subtract Chips 6" to="." method="_on_subtract_chips_6_pressed"]
 [connection signal="text_changed" from="P7/Player 7 Name" to="." method="_on_player_7_name_text_changed"]
+[connection signal="pressed" from="P7/Add Chips 7" to="." method="_on_add_chips_7_pressed"]
+[connection signal="pressed" from="P7/Subtract Chips 7" to="." method="_on_subtract_chips_7_pressed"]
 [connection signal="text_changed" from="P8/Player 8 Name" to="." method="_on_player_8_name_text_changed"]
+[connection signal="pressed" from="P8/Add Chips 8" to="." method="_on_add_chips_8_pressed"]
+[connection signal="pressed" from="P8/Subtract Chips 8" to="." method="_on_subtract_chips_8_pressed"]
